@@ -1,0 +1,23 @@
+!!! 5
+%html{lang: "en"}
+  %head
+    %title Juego de Trenes
+    %link{rel: "stylesheet", type: "text/css", href: "styles.css"}
+
+  %body
+    #startScreen.screen
+      %h1 Juego de Trenes
+      %button#playButton Jugar
+      %select#gameMode
+        %option{value: "easy"} Fácil
+        %option{value: "normal"} Normal
+        %option{value: "hard"} Difícil
+
+    #gameScreen.hidden.screen
+      .track
+        .train
+        .station
+      %button#startButton Iniciar
+      %button#stopButton Detener
+
+    %script{src: "script.js"}
